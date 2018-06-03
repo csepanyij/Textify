@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "800067412515",
+    "firebase_url": "https://textify-197415.firebaseio.com",
+    "project_id": "textify-197415",
+    "storage_bucket": "textify-197415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800067412515:android:b831c06784d5c639",
+        "android_client_info": {
+          "package_name": "group26.textify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800067412515-80r23kuor3qnkjdnqen3onvkqe2aq5jo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "group26.textify",
+            "certificate_hash": "28f0ed8ae940fa9737ccd2dd06dd4a116b92cce2"
+          }
+        },
+        {
+          "client_id": "800067412515-mjfmbrdceufr5htcant3t4301vojl7ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDudRPy3A63eg_9l4gUMurP39_sJgdp24"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800067412515-mjfmbrdceufr5htcant3t4301vojl7ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

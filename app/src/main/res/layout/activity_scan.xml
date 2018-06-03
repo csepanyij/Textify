@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group26.textify.Activities.ScanActivity">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/component_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cameraCaptureButton"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCamera"
+        android:text="@string/camera_capture"
+        app:layout_constraintBottom_toBottomOf="@+id/selectedImage"
+        app:layout_constraintStart_toStartOf="@+id/selectedImage" />
+
+    <Button
+        android:id="@+id/librarySelectButton"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLibrary"
+        android:text="@string/library"
+        app:layout_constraintBottom_toTopOf="@+id/recogniseButton"
+        app:layout_constraintEnd_toEndOf="@+id/selectedImage" />
+
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/recognised_image_desc"
+        android:src="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/recogniseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3" />
+
+    <Button
+        android:id="@+id/recogniseButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="recogniseImage"
+        android:text="@string/recogniseButton"
+        app:layout_constraintBottom_toTopOf="@+id/responseTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraCaptureButton" />
+
+    <TextView
+        android:id="@+id/responseTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:scrollbars="vertical"
+        android:text="@string/text_default"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/languageSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recogniseButton" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRecognisePage"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/responseTextView"
+        app:layout_constraintEnd_toEndOf="@+id/responseTextView"
+        app:layout_constraintStart_toStartOf="@+id/responseTextView"
+        app:layout_constraintTop_toTopOf="@+id/responseTextView" />
+
+    <EditText
+        android:id="@+id/editFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="@string/new_photo_name"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCancelImage"
+        android:text="@android:string/cancel"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/editFileName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSaveImage"
+        android:text="@string/save"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/editFileName"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCancel" />
+
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/translateText" />
+
+    <TextView
+        android:id="@+id/translateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/translate_into"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/languageSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/languageSpinner" />
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/video_options"
+        android:title="@string/video_options"/>
+    <item android:id="@+id/audio_options"
+        android:title="@string/audio_options"/>
+    <item android:id="@+id/select_language"
+        android:title="@string/select_language"/>
+    <item android:id="@+id/user_guide"
+        android:title="@string/user_guide"/>
+    <item android:id="@+id/log_out"
+        android:title="@string/log_out"/>
+</menu>

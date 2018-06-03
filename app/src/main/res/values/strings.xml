@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Textify</string>
+    <string name="hint">Enter a message</string>
+    <string name="send">Send</string>
+    <string name="save">Save</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="new_account">New Account</string>
+    <string name="create_account">Create a new account</string>
+    <string name="login">Login</string>
+    <string name="confirm">Confirm</string>
+    <string name="terms">I accept the </string>
+    <string name="conditions"> terms and conditions</string>
+    <string name="logo_desc">Logo image</string>
+    <string name="camera_capture">Camera</string>
+    <string name="library">Library</string>
+    <string name="recogniseButton">Recognise</string>
+    <string name="text_default">Recognised text goes here</string>
+    <string name="recognised_image_desc">Recognised image</string>
+    <string name="dialog_no_camera">Camera permission denied</string>
+    <string name="cont">Continue</string>
+    <string name="translate">Translate</string>
+    <string name="title_activity_translate">TranslateActivity</string>
+    <array name="languages">
+        <item>Language</item>
+        <item>Code</item>
+    </array>
+    <string name="confirm_password">Confirm password</string>
+    <string name="create_new_user">Create</string>
+    <string name="new_photo_name">Name your photo</string>
+    <string name="translate_into">Translate into :</string>
+    <string name="select_photos">Select photos</string>
+    <string name="share">Share</string>
+    <string name="selected"> files selected</string>
+    <string name="share_photos">Share photos</string>
+
+    <string name="goBack">Return</string>
+    <string name="audio_options">Audio Options</string>
+    <string name="video_options">Video Options</string>
+    <string name="select_language">Select Language</string>
+    <string name="user_guide">User Guide</string>
+    <string name="log_out">Log out</string>
+
+    <string name="guide">From the main page, tap \"Camera\" to take a photo of text, or \"Library\" to choose an image of text from storage.\n
+        \nThen tap \"Recognise\" to recognise text on the image selected. The text will appear below.\n
+        \nYou will get the option to translate the text into one of 7 languages.
+        \nYou can then name the photo and save it for further use.\n
+        \nIf you press the documents logo on the toolbar, you will be able to access any photos saved
+        on your Textify account. By selecting an image in the list, you can read its associated text
+        and share it.\n
+        \nIf you press the letter logo, you will be able to select multiple photos and share them all
+        together.\n
+        \nThanks for using Textify!
+    </string>
+
+
+    <string name="title_activity_user_guide">Textify User Guide</string>
+</resources>
